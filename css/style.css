@@ -13,17 +13,21 @@
 body {
     font-family: 'GothamBook', 'Arial';
     background-color: #38404a;
+    font-size: 12px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 2.3em;
     color: #444e5d;
 }
-
+.btn {
+    font-size: 1em;
+}
 .top-nav {
     position: absolute;
     z-index: 1000;
     width: 100%;
+    margin-top: 3em;
 }
 
 .logo {
@@ -46,8 +50,9 @@ h3 {
 }
 
 .nav {
-    margin-top: 7px;
+    margin-top: 0.44em;
     margin-bottom: 0;
+    background-color: #343c47;
 }
 
 .nav>li>a {
@@ -57,9 +62,11 @@ h3 {
 }
 
 .nav>li>a:hover,
-.nav>li.active>a {
+.nav>li.active>a,
+.nav>li.active>a:focus {
     border-radius: 30px;
     background: #ff4b5a;
+    outline: none;
 }
 
 .nav>li>a:focus {
@@ -67,8 +74,10 @@ h3 {
     color: #fff;
 }
 
+/* carousel 部分*/
 #carousel-top .carousel-caption {
-    top: 115px;
+    top: 10em;
+    overflow: hidden;
 }
 
 .carousel-control {
@@ -86,18 +95,20 @@ h3 {
 }
 
 .head-img {
-    line-height: 932px;
-    vertical-align: middle;
+    display: none;
+    height: 22em;
+    max-height: 20%;
 }
 
 .head-text {
-    text-align: left;
+    text-align: center;
     color: #fff;
     display: inline-block;
     vertical-align: middle;
 }
 
 .head-text h3 {
+    color: #fff;
     margin-top: 0;
 }
 
@@ -107,11 +118,11 @@ h3 {
 
 .head-text p,
 .head-text ul {
-    font-size: 17px;
+    font-size: 1.1em;
 }
 
 .head-text ul {
-    margin: 35px 0;
+    margin: 1.75em 0;
     padding-left: 0;
     list-style: none
 }
@@ -132,16 +143,14 @@ section {
     background: #f2f2f2;
 }
 
-.page-show .col-md-7 {
-    padding-top: 15px;
-}
+
 
 
 /* qoute 部分 */
 
 .qoute {
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 1.87em;
+    font-size: 1.25em;
     text-align: center;
     color: #746f6f;
     background: #edebeb;
@@ -153,22 +162,22 @@ blockquote:before {
     color: #66837e;
     text-align: center;
     font-family: 'Gnuolane';
-    font-size: 100px;
-    height: 90px;
+    font-size: 5.5em;
+    height: 0.9em;
     width: 100%;
     display: block;
 }
 
 blockquote {
     border: none;
-    font-size: 20px;
+    font-size: 1.8em;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .designer-photo {
-    width: 85px;
-    height: 85px;
+    width: 90px;
+    height: 90px;
     display: inline-block;
     background: #dae0da;
     border-radius: 50%;
@@ -176,10 +185,14 @@ blockquote {
     vertical-align: middle;
     overflow: hidden;
 }
+
 .designer-photo img {
     width: 80%;
 }
+
 .designer-info {
+    font-size: 1.8em;
+    margin-left: 2.4em;
     display: inline-block;
     text-align: left;
     vertical-align: middle;
@@ -187,10 +200,6 @@ blockquote {
 
 
 /*details 部分*/
-
-.details .col-md-8 {
-    padding-right: 20%;
-}
 
 .details {
     color: #4c5662;
@@ -203,12 +212,12 @@ blockquote {
 
 .details h3 + p {
     line-height: 1.7;
-    padding-bottom: 53px;
+    padding-bottom: 2.65em;
     border-bottom: 1px solid #b7b7b7;
 }
 
 .details ul + p {
-    font-size: 33px;
+    font-size: 1.65em;
     color: #323a45;
 }
 
@@ -224,10 +233,10 @@ blockquote {
 
 .details ul>li:before {
     position: relative;
-    top: 10px;
+    top: 0.2em;
     vertical-align: middle;
     content: url('../images/icon-1.png');
-    margin-right: 18px;
+    margin-right: 1.1em;
 }
 
 
@@ -260,17 +269,17 @@ blockquote {
 .price {
     color: #999;
     text-align: center;
-    padding: 10% 0;
+    padding: 8.1em 0;
 }
 
 .price .col-md-12 {
-    padding-bottom: 20%;
+    padding-bottom: 7.3em;
 }
 
 .price-item {
-    margin: 0 10%;
+    margin: 0 1.7em;
     border: 2px solid #a1a1a1;
-    padding-bottom: 10%;
+    padding-bottom: 3.1em;
     margin-bottom: 10%;
 }
 
@@ -285,7 +294,7 @@ blockquote {
 
 .price-item p {
     line-height: 2;
-    padding: 15% 0 10% 0;
+    padding: 3.6em 0 2.65em 0;
 }
 
 
@@ -298,6 +307,7 @@ blockquote {
 
 .works h3 {
     text-align: center;
+    margin: 0 3.9em;
     padding-bottom: 30px;
     border-bottom: 1px solid #b7b7b7;
     margin-bottom: 30px;
@@ -371,13 +381,12 @@ blockquote {
 /*contact-us 部分*/
 
 .contact-us {
-    padding: 30px 0 62px 0;
+    padding: 4.8em 0 9.25em 0;
     text-align: center;
     background: #323a45;
 }
 
 .contact-us h3 {
-    line-height: 2;
     color: #fff;
 }
 
@@ -418,35 +427,34 @@ footer ul>li img {
 }
 
 
-/* lg */
+/* small */
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     body {
-        font-size: 20px;
+        font-size: 14px;
     }
-    h3 {
-        font-size: 34px;
+    .logo img {
+        width: 50%;
     }
-    .btn {
-        font-size: 20px;
+    .nav {
+        background-color: transparent;
     }
-    /* qoute 部分 */
-    .qoute {
-        padding-bottom: 128px;
+    .head-img {
+        display: inline-block;
+        height: 27em;
     }
     .designer-photo {
-        width: 171px;
-        height: 171px;
+        width: 120px;
+        height: 120px;
     }
-    .designer-info {
-        margin-left: 50px;
+    .price-item {
+        margin-bottom: 0;
     }
-    /* detail 部分*/
-    .details {
-        padding: 136px 0;
+    .contact-us h3 {
+        line-height: 2;
     }
-    .details ul + p {
-        font-size: 33px;
+    .clients ul>li {
+        width: 20%;
     }
 }
 
@@ -455,33 +463,74 @@ footer ul>li img {
 
 @media (min-width: 992px) {
     body {
-        font-size: 18px;
+        font-size: 16px;
     }
-    h3 {
-        font-size: 30px;
+    .head-img {
+        height: 22em;
     }
-    .btn {
-        font-size: 18px;
+    .head-text {
+        text-align: left
+    }
+    .logo img {
+        width: 60%;
+    }
+    .top-nav-fixed {
+        margin-top: 0;
+        position: fixed;
+        background-color: #343c47;
+    }
+    .designer-photo {
+        width: 171px;
+        height: 171px;
     }
 }
 
 
-/* small */
+/* lg */
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     body {
-        font-size: 16px;
+        font-size: 18px;
     }
-    h3 {
-        font-size: 25px;
+    .head-img {
+        height: 27em;
     }
-    .btn {
-        font-size: 16px;
+    .head-text {
+        margin-top: 4em
+    }
+    .head-text h3 {
+        font-size: 1.8em
+    }
+    .logo img {
+        width: 80%;
+    }
+    .details .col-md-8 {
+        padding-right: 17.25em;
+    }
+    .page-show .row + .row {
+        padding-top: 6em;
+    }
+
+}
+@media(min-width: 1380px) {
+    body {
+        font-size: 20px;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .page-show .row + .row {
+        padding-top: 8.4em;
     }
 }
-
 @media (min-width: 1600px) {
     .container {
         width: 1463px;
+    }
+    .head-img {
+        height: 100%;
+    }
+    .head-text {
+        margin-top: 10.9em
     }
 }

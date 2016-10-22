@@ -3,7 +3,11 @@
     src: url('../fonts/GothamBook.eot');
     src: url('../fonts/GothamBook.woff') format('woff'), url('../fonts/GothamBook.ttf') format('truetype');
 }
-
+@font-face {
+    font-family: 'yellowtail';
+    src: url('../fonts/yellowtail-regular-webfont.eot');
+    src: url('../fonts/yellowtail-regular-webfont.woff') format('woff'), url('../fonts/yellowtail-regular-webfont.ttf') format('truetype'),url('../fonts/yellowtail-regular-webfont.svg#yellowtail') format("svg");
+}
 @font-face {
     font-family: 'Gnuolane';
     src: url('../fonts/gnuolane_rg-webfont.eot');
@@ -31,14 +35,12 @@ h3 {
 }
 
 .logo {
-    font-size: 0;
-    text-indent: -99999em;
+    font-family: 'yellowtail';
+    font-size: 3.5em;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.logo img {
-    width: 30%;
+    color: #fff;
+    line-height: 51px;
 }
 
 .navbar {
@@ -398,7 +400,23 @@ blockquote {
 .contact-us button {
     margin-top: 25px;
 }
+#carousel-example-generic .carousel-caption {
+    top: 7.95em;
+    text-align: center;
+}
+#carousel-example-generic .carousel-caption p {
+    padding: 3.5em;
+    font-size: 1.45em;
+}
 
+.blog-t strong {
+    font-family: 'yellowtail';
+    font-size: 2.5em;
+    margin-right: 0.5em;
+}
+.blog-t span {
+    font-size: 1.2em;
+}
 
 /* footer 部分*/
 

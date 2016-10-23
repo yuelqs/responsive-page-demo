@@ -3,11 +3,13 @@
     src: url('../fonts/GothamBook.eot');
     src: url('../fonts/GothamBook.woff') format('woff'), url('../fonts/GothamBook.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'yellowtail';
     src: url('../fonts/yellowtail-regular-webfont.eot');
-    src: url('../fonts/yellowtail-regular-webfont.woff') format('woff'), url('../fonts/yellowtail-regular-webfont.ttf') format('truetype'),url('../fonts/yellowtail-regular-webfont.svg#yellowtail') format("svg");
+    src: url('../fonts/yellowtail-regular-webfont.woff') format('woff'), url('../fonts/yellowtail-regular-webfont.ttf') format('truetype'), url('../fonts/yellowtail-regular-webfont.svg#yellowtail') format("svg");
 }
+
 @font-face {
     font-family: 'Gnuolane';
     src: url('../fonts/gnuolane_rg-webfont.eot');
@@ -24,9 +26,11 @@ h3 {
     font-size: 2.3em;
     color: #444e5d;
 }
+
 .btn {
     font-size: 1em;
 }
+
 .top-nav {
     position: absolute;
     z-index: 1000;
@@ -76,7 +80,14 @@ h3 {
     color: #fff;
 }
 
+
 /* carousel 部分*/
+
+#carousel-top .carousel-inner .item>img {
+    max-width: none;
+    height: 40em;
+}
+
 #carousel-top .carousel-caption {
     top: 10em;
     overflow: hidden;
@@ -145,7 +156,9 @@ section {
     background: #f2f2f2;
 }
 
-
+.page-show .row + .row {
+    padding-top: 2em;
+}
 
 
 /* qoute 部分 */
@@ -241,6 +254,10 @@ blockquote {
     margin-right: 1.1em;
 }
 
+.details .col-md-4 img {
+    display: none;
+}
+
 
 /* clients 部分 */
 
@@ -249,20 +266,26 @@ blockquote {
     background: #faf8f8;
 }
 
+.clients .col-md-12 h3 {
+    padding-top: 1em;
+}
+
 .clients ul {
-    padding: 10% 0 20% 0;
+    padding-bottom:20% ;
     list-style: none;
 }
 
 .clients ul>li {
-    width: 50%;
-    float: left;
+    text-align: center;
+    width: 33.3%;
+    height: 2em;
     padding-right: 6%;
+    margin-top: 10%;
+    float: left;
 }
 
-.clients ul>li img {
-    font-size: 30px;
-    line-height: 3;
+.clients ul>li:last-child {
+    padding-right: 0;
 }
 
 
@@ -271,7 +294,7 @@ blockquote {
 .price {
     color: #999;
     text-align: center;
-    padding: 8.1em 0;
+    padding: 3.1em 0;
 }
 
 .price .col-md-12 {
@@ -309,16 +332,18 @@ blockquote {
 
 .works h3 {
     text-align: center;
-    margin: 0 3.9em;
-    padding-bottom: 30px;
+    margin: 0 2em;
+    padding: 1.15em 0 1.86em 0;
     border-bottom: 1px solid #b7b7b7;
-    margin-bottom: 30px;
+    margin-bottom: 1.2em;
 }
-
+.works .col-md-4 {
+    padding-top: 10px;
+}
 .works-item {
     color: #fff;
     text-decoration: none;
-    display: inline-block;
+    display:block;
     position: relative;
 }
 
@@ -352,10 +377,10 @@ blockquote {
 .works-item .mask .circle {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -3.15em;
     bottom: 5%;
-    width: 126px;
-    height: 126px;
+    width: 6.3em;
+    height: 6.3em;
     border-radius: 50%;
     background: #fff;
 }
@@ -365,7 +390,8 @@ blockquote {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -21.5px;
+    margin-top: -21.5px;
 }
 
 .works-item:hover .mask {
@@ -377,6 +403,29 @@ blockquote {
 
 .blog {
     padding-top: 50px;
+}
+
+.blog-t strong {
+    font-family: 'yellowtail';
+    font-size: 2.5em;
+    margin-right: 0.5em;
+}
+
+.blog-t span {
+    font-size: 1.2em;
+}
+#carousel-example-generic .carousel-caption {
+    top: 2em;
+}
+#carousel-example-generic .carousel-inner .item>img {
+    max-width: none;
+    width: auto;
+    height: 40.45em;
+}
+
+#carousel-example-generic .carousel-caption p {
+    padding: 2em 0;
+    font-size: 1.45em;
 }
 
 
@@ -400,23 +449,7 @@ blockquote {
 .contact-us button {
     margin-top: 25px;
 }
-#carousel-example-generic .carousel-caption {
-    top: 7.95em;
-    text-align: center;
-}
-#carousel-example-generic .carousel-caption p {
-    padding: 3.5em;
-    font-size: 1.45em;
-}
 
-.blog-t strong {
-    font-family: 'yellowtail';
-    font-size: 2.5em;
-    margin-right: 0.5em;
-}
-.blog-t span {
-    font-size: 1.2em;
-}
 
 /* footer 部分*/
 
@@ -426,22 +459,32 @@ footer {
     color: #fff;
 }
 
+footer .row div:first-child {
+    padding-bottom: 2em;
+}
+
 footer ul {
     list-style: none;
-    float: left;
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
 }
 
 footer ul > li {
     margin-right: 7px;
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
 }
-
 footer ul + span {
-    line-height: 43px;
+    vertical-align: middle;
+}
+footer .col-md-6.text-right {
+    text-align: left;
 }
 
-footer ul>li img {
-    width: 60%;
+footer .col-md-6 img {
+   width: 2.2em;
 }
 
 
@@ -451,15 +494,22 @@ footer ul>li img {
     body {
         font-size: 14px;
     }
-    .logo img {
-        width: 50%;
-    }
     .nav {
         background-color: transparent;
     }
     .head-img {
         display: inline-block;
-        height: 27em;
+        height: 24em;
+    }
+    .head-text {
+        margin-top: 3.5em;
+        text-align: left;
+    }
+    .head-text h3 {
+        font-size: 1.5em;
+    }
+    .head-text ul {
+        margin: 1em 0;
     }
     .designer-photo {
         width: 120px;
@@ -468,11 +518,31 @@ footer ul>li img {
     .price-item {
         margin-bottom: 0;
     }
+    .works h3 {
+        margin-left: 3.9em;
+        margin-right: 3.9em;
+    }
     .contact-us h3 {
         line-height: 2;
     }
     .clients ul>li {
+        height: auto;
         width: 20%;
+    }
+    .clients ul>li img {
+        width: 12.3em
+    }
+    .details .col-md-4 img {
+        display: inline-block;
+    }
+    #carousel-example-generic .carousel-caption p {
+        padding: 3.5em;
+    }
+    footer .col-md-6.text-right {
+        text-align: right;
+    }
+    footer .row div:first-child {
+        padding-bottom: 0;
     }
 }
 
@@ -487,7 +557,11 @@ footer ul>li img {
         height: 22em;
     }
     .head-text {
-        text-align: left
+        margin-top: 4.5em;
+        text-align: left;
+    }
+    .head-text h3 {
+        font-size: 1.9em;
     }
     .logo img {
         width: 60%;
@@ -501,6 +575,9 @@ footer ul>li img {
         width: 171px;
         height: 171px;
     }
+    #carousel-example-generic .carousel-caption {
+        top: 7.95em;
+    }
 }
 
 
@@ -513,23 +590,17 @@ footer ul>li img {
     .head-img {
         height: 27em;
     }
-    .head-text {
-        margin-top: 4em
-    }
-    .head-text h3 {
-        font-size: 1.8em
-    }
     .logo img {
         width: 80%;
     }
     .details .col-md-8 {
         padding-right: 17.25em;
     }
-    .page-show .row + .row {
-        padding-top: 6em;
+    #carousel-top .carousel-inner .item>img {
+        height: 44.1em;
     }
-
 }
+
 @media(min-width: 1380px) {
     body {
         font-size: 20px;
@@ -537,10 +608,17 @@ footer ul>li img {
     .logo img {
         width: 100%;
     }
+    .head-text h3 {
+        font-size: 2.3em
+    }
     .page-show .row + .row {
         padding-top: 8.4em;
     }
+    #carousel-top .carousel-inner .item>img {
+        height: 53.1em;
+    }
 }
+
 @media (min-width: 1600px) {
     .container {
         width: 1463px;

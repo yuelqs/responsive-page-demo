@@ -84,6 +84,7 @@ h3 {
 /* carousel 部分*/
 
 #carousel-top .carousel-inner .item>img {
+    max-width: none;
     height: 40em;
 }
 
@@ -336,11 +337,13 @@ blockquote {
     border-bottom: 1px solid #b7b7b7;
     margin-bottom: 1.2em;
 }
-
+.works .col-md-4 {
+    padding-top: 10px;
+}
 .works-item {
     color: #fff;
     text-decoration: none;
-    display: inline-block;
+    display:block;
     position: relative;
 }
 
@@ -374,7 +377,7 @@ blockquote {
 .works-item .mask .circle {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -3.15em;
     bottom: 5%;
     width: 6.3em;
     height: 6.3em;
@@ -387,7 +390,8 @@ blockquote {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -21.5px;
+    margin-top: -21.5px;
 }
 
 .works-item:hover .mask {
@@ -515,7 +519,8 @@ footer .col-md-6 img {
         margin-bottom: 0;
     }
     .works h3 {
-        margin: 0 3.9em;
+        margin-left: 3.9em;
+        margin-right: 3.9em;
     }
     .contact-us h3 {
         line-height: 2;
@@ -591,6 +596,9 @@ footer .col-md-6 img {
     .details .col-md-8 {
         padding-right: 17.25em;
     }
+    #carousel-top .carousel-inner .item>img {
+        height: 44.1em;
+    }
 }
 
 @media(min-width: 1380px) {
@@ -606,6 +614,9 @@ footer .col-md-6 img {
     .page-show .row + .row {
         padding-top: 8.4em;
     }
+    #carousel-top .carousel-inner .item>img {
+        height: 53.1em;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -617,8 +628,5 @@ footer .col-md-6 img {
     }
     .head-text {
         margin-top: 10.9em
-    }
-    #carousel-top .carousel-inner .item>img {
-        height: 53.1em;
     }
 }
